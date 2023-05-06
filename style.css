@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+section {
+    background: #1d2a43;
+    position: relative;
+    height: 100vh;
+}
+.logo {
+    position: absolute;
+    width: 12.7%;
+    top: 4%;
+    left: 13%;
+    z-index: 1;
+}
+.language {
+    position: absolute;
+    height: 40px;
+    min-width: 8.5%;
+    z-index: 1;
+    right: 33%;
+    top: 4%;
+    background: #25324b ;
+    color: white;
+    font-weight: 500;
+    border-radius: 25px;
+    border-color: #25324b ;
+    text-align: left;
+    padding: 0px 7px;
+}
+.language img {
+    width: 28px;
+}
+.text_tieng_viet {
+    position: absolute;
+    z-index: 1;
+    color: #96aad0;
+    right: 34.8%;
+    top: 5%;
+    font-family: Roboto,sans-serif;
+    font-size: 18px;
+}
+.dang_nhap {
+    position: absolute;
+    height: 36px;
+    min-width: 8.5%;
+    padding: 0 32px;
+    z-index: 1;
+    right: 23%;
+    top: 4%;
+    background: linear-gradient(0deg,#2853a6,#406cc0);
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    border-color: linear-gradient(0deg,#2853a6,#406cc0);
+}
+.text_dangnhap {
+    align-items: center;
+    color: inherit;
+    justify-content: inherit;
+    line-height: normal;
+    position: relative;
+    transition: inherit;
+    font-size: 17px;
+    transition-property: opacity;
+}
+.dang_ky {
+    position: absolute;
+    height: 36px;
+    min-width: 6%;
+    padding: 0 32px;
+    z-index: 1;
+    right: 14%;
+    top: 4%;
+    border-radius: 8px;
+    border-color: wheat;
+}
+.text_dangky {
+    align-items: center;
+    color: inherit;
+    justify-content: inherit;
+    line-height: normal;
+    position: relative;
+    transition: inherit;
+    font-size: 18px;
+    transition-property: opacity;
+    color: #3a66ba;
+}
+.menu {
+    width: 100%;
+    top: -2%;
+    position: absolute;
+    left: -3%;
+}
+.menu .img_menu {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    top: 10%;
+    position: absolute;
+}
+.content .img_content {
+    width: 100%;
+}
+.img-logo {
+    width: 100%;
+    position: absolute;
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 35%;
+    transform: translate(-50%,-50%);
+    background-color: #131e36;
+    padding: 20px;
+    border-radius: 25px;
+    z-index: 9999;
+    display: none;
+    height: 230px;
+    width: 30%;
+}
+.popup_h2 {
+    text-align: center;
+    color: red;
+}
+.popup_input {
+    width: 60%;
+    height: 40px;
+    font-size: 20px;
+    margin: -12px 0px 30px 20%;
+    text-align: center;
+}
+.snip1457 {
+    font-family: 'Raleway', Arial, sans-serif;
+    border: none;
+    background-color: #5666a5;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 46px;
+    font-weight: 400;
+    font-size: 1em;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+    border-radius: 23px;
+    letter-spacing: 2px;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: -35px;
+    margin-left: 30%;
+    width: 40%;
+}
+.snip1457:before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: inherit;
+    background-color: #ffffff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.snip1457:after {
+position: absolute;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+border: 5px solid #5666a5;
+content: '';
+border-radius: inherit;
+}
+.snip1457:hover,
+.snip1457.hover {
+    background-color: #5666a5;
+    color: #ffffff;
+}
+.snip1457:hover:before,
+.snip1457.hover:before {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 0.25;
+}
+.popup_h2 {
+    text-align:center; color:red
+}
+@media screen and (max-width: 420px) {
+    .logo {
+        width: 39.7%;
+        top: 1%;
+        left: 3%
+    }
+    .dang_nhap {
+        right: 60%;
+        top: 5%;
+        height: 34px;
+        width: 150px;
+        font-size: 16px;
+        padding: 0;
+    }
+    .dang_ky {
+        right: 21%;
+        top: 5%;
+        height: 34px;
+        width: 150px;
+        padding: 0;
+        border-color: black;
+    }
+    .language {
+        top: 1%;
+        right: 2%;
+        border: none;
+        background-color: #1d2a43;
+    }
+    .snip1457 {
+        margin-top: -5%;
+        margin-left: 16%;
+        width: 70%;
+    }
+    .popup {
+        width: 70%;
+    }
+    .popup_input {
+        margin-left: 12%;
+        width: 76%;
+    }
+}
